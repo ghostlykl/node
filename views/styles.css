@@ -334,8 +334,7 @@ h3 {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: #292b2c;
-  background-color: #fff;
+  color: #000000;
 }
 
 /* свойства модального окна по умолчанию */
@@ -451,4 +450,18 @@ h3 {
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
+}
+
+.bootn {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  border: solid 2px #000;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 1);
+}
+.bootn:hover {
+  background-color: #929292;
 }
