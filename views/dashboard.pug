@@ -1,201 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"Ф content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>KANBAN</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  div(class="body_container")
-    header
-      div(class="top_container")
-        div(class="header")
-          h1 Доска заданий 
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap' rel='stylesheet')
+  title KANBAN
+  link(rel='stylesheet' href='styles.css')
+.body_container
+  header
+    .top_container
+      .header
+        h1 Доска заданий
+      .add_board
+        button.add_board_btn
+          | Добавть доску
+  main
+    .main_container
+      .tasks_container
+        .regular_container
+          .task_container_header
+            .tasks_header
+              | Дела
+            .more_btn_d
+              button.more_btn ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/spike.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/leon.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .task_container
+            .task_header_container
+              .task_header_left
+                .circle.regular_circle
+                .task_header
+                  h2 Заголовок
+              .spike
+                img(src='img/poko.png' alt='')
+            .task_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          button.dop Добавить задачу
+        .in_progress_container
+          .task_container_header
+            .tasks_header
+              | В процессе
+            .more_btn_d
+              button.more_btn ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .in_progress_container1
+            .in_progress_header_container
+              .in_progress_middle
+                .circle.regular_circle1
+                .in_progress_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .in_progress_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          button.dop Добавить задачу
+        .problems_container
+          .task_container_header
+            .tasks_header
+              | Проблемки
+            .more_btn_d
+              button.more_btn ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .problem_container
+            .problem_header_container
+              .problem_right
+                .circle.regular_circle2
+                .problem_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .problem_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ... 
+          button.dop Добавить задачу
+        .gotovos_container
+          .task_container_header
+            .tasks_header
+              | Готово
+            .more_btn_d
+              button.more_btn ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          .gotovo_container
+            .gotovo_header_container
+              .gotovo_right
+                .circle.regular_circle3
+                .gotovo_header
+                  h3 Заголовок
+              .bibi
+                img(src='img/bibi.png' alt='')
+            .gotovo_description_container
+              div Какое-то описание
+              .more_btn_desc
+                button ...
+          button.dop Добавить задачу
 
-        div(class="add_board")
-          button(class="add_board_btn")
-            h3 Добавить доску 
-
-    main
-      div(class="main_container")
-        div(class="tasks_container")
-          div(class="regular_container")
-            div(class="task_container_header")
-              div(class = "tasks_header")
-              h1(class="name") Дела
-
-              div(class="more_btn_d")
-                button(class="more_btn") ...
-
-            div(class="task_container")
-              div(class="task_header_container")
-                div(class="task_header_left")
-                  div(class="circle regular_circle")
-                  div(class="task_header")
-                    h2 Заголовок
-
-                div(class="spike")
-                  img(src="img/spike.png" alt="")
-
-              div(class="task_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ...
-
-            div(class="task_container")
-              div(class="task_header_container")
-                div(class="task_header_left")
-                  div(class="circle regular_circle")
-                  div(class="task_header")
-                    h2 Заголовок
-
-                div(class="spike")
-                  img(src="img/leon.png" alt="")
-
-              div(class="task_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ... 
-
-            div(class="task_container")
-              div(class="task_header_container")
-                div(class="task_header_left")
-                  div(class="circle regular_circle")
-                  div(class="task_header")
-                    h2 Заголовок
-
-                div(class="spike")
-                  img(src="img/poko.png" alt="")
-
-              div(class="task_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ...
-
-          div(class="in_progress_container") 
-            div(class="task_container_header")
-              div(class = "tasks_header")
-                h1(class="name") В процессе
-
-              div(class="more_btn_d")
-                button(class="more_btn") ...
-
-            div(class = "in_progress_container1")
-              div(class="in_progress_header_container")
-                div(class="in_progress_middle")
-                  div(class="circle regular_circle1")
-                  div(class="in_progress_header")
-                    h3 Заголовок
-
-                div(class="bibi")
-                  img(src="img/bibi.png" alt="")
-
-              div(class="in_progress_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ...
-
-            div(class = "in_progress_container1")
-              div(class="in_progress_header_container")
-                div(class="in_progress_middle")
-                  div(class="circle regular_circle1")
-                  div(class="in_progress_header")
-                    h3 Заголовок
-
-                div(class="bibi")
-                  img(src="img/bibi.png" alt="")
-
-              div(class="in_progress_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ...
-
-            div(class = "in_progress_container1")
-              div(class="in_progress_header_container")
-                div(class="in_progress_middle")
-                  div(class="circle regular_circle1")
-                  div(class="in_progress_header")
-                    h3 Заголовок
-
-                div(class="bibi")
-                  img(src="img/bibi.png" alt="")
-
-              div(class="in_progress_description_container")
-                div Какое-то описание
-                div(class="more_btn_desc")
-                  button ...
-
-          div(class="problems_container")
-            div(class="task_container_header")
-              div(class = "tasks_header")
-                h1(class="name") Проблемки
-
-              div(class="more_btn_d") 
-                button(class="more_btn") ...
-
-            div(class="problem_container")
-              div(class="problem_header_container")
-                div(class="problem_right")
-                  div(class="circle regular_circle2")
-                  div(class="problem_header")
-                    h3 Заголовок
-
-                div(class="bibi")
-                  img(src="img/bibi.png" alt="")
-
-                div(class="problem_description_container")
-                  div Какое-то описание
-                  div(class="more_btn_desc")
-                    button ...
-
-              div(class="problem_container")
-                div(class="problem_header_container")
-                  div(class="problem_right")
-                    div(class="circle regular_circle2")
-                    div(class="problem_header")
-                      h3 Заголовок
-
-                  div(class="bibi")
-                    img(src="img/bibi.png" alt="")
-
-                  div(class="problem_description_container")
-                    div Какое-то описание
-                    div(class="more_btn_desc")
-                      button ...
-
-                div(class="problem_container")
-                  div(class="problem_header_container")
-                    div(class="problem_right")
-                      div(class="circle regular_circle2")
-                      div(class="problem_header")
-                        h3 Заголовок
-
-                    div(class="bibi")
-                      img(src="img/bibi.png" alt="")
-
-                    div(class="problem_description_container")
-                      div Какое-то описание
-                      div(class="more_btn_desc")
-                        button ...
-
-          div(class="done_container")
-            div(class="task_container_header")
-              div(class ="tasks_header")
-              h1(class="name") Готово
-
-              div(class="more_btn_d")
-                button(class="more_btn") ...
-
-        div(class="done_container")
-          div(class="done_header_container")
-            div(class="done_right")
-              div(class="circle regular_circle3")
-              div(class="done_header")
-                h3 Заголовок
-
-</body>
-</html>
