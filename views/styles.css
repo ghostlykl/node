@@ -355,12 +355,12 @@ h3 {
 }
 .modal-dialog {
   display: flex;
-  background: #fefefe;
   border: #333 solid 1x;
   border-radius: 5px;
   position: fixed;
   margin-left: -15%;
   margin-top: -4%;
+  padding-left: 1%;
   left: 40%;
   top: -100%;
   z-index: 11;
@@ -371,7 +371,7 @@ h3 {
   -ms-transform: translate(0, -500);
   -webkit-transition: webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(230, 230, 230, 0.96);
   color: #4b4b4b;
 }
 .modal:target .modal-dialog {
@@ -424,4 +424,22 @@ a.bootn {
   justify-content: center;
   margin-left: 10%;
   margin-bottom: 5%;
+}
+
+.modal-title {
+  text-decoration: underline;
+}
+
+.da {
+  font-size: 15px;
+  width: 155%;
+  height: 165px;
+  background: rgba(216, 216, 216, 0.96);
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: #4b4b4b;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 2%;
 }

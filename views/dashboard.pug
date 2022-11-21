@@ -66,14 +66,17 @@ head
               .modal-dialog
                 .modal-header
                   h3.modal-title Название задачи
+                    input(type="text")
                     a.btn-close(href='#close' aria-hidden='true') x 
                   .modal-body
-                  p участники
+                  p участники:
                   img(src='img/poko.png' alt='')
                   img(src='img/poko.png' alt='')
                   img(src='img/poko.png' alt='')
-                    .opisanie 
-                    p 3ebgujhbfbbfbiweu
+                  .opis
+                    .form
+                      label Описание
+                      input.da(type='text')
         .in_progress_container
           .task_container_header
             .tasks_header
