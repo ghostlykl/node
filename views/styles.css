@@ -470,5 +470,18 @@ img.vloj {
   margin-top: -15px;
 }
 .bootn2 {
-
+  width: 70px;
+  height: 20px;
+  margin-left: 140%;
+  background-color: #ff9e9e;
+  text-align: center;
+  border-radius: 10px;
+}
+.bootn3 {
+  width: 70px;
+  height: 20px;
+  margin-left: 170%;
+  background-color: #9aff98;
+  text-align: center;
+  border-radius: 10px;
 }
