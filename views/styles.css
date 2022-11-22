@@ -434,8 +434,8 @@ a.bootn {
 
 .da {
   font-size: 15px;
-  width: 110%;
-  height: 165px;
+  width: 130%;
+  height: 250px;
   background: rgba(216, 216, 216, 0.96);
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -460,11 +460,15 @@ a.bootn {
   margin-left: 2%;
 }
 .vloj {
-  margin-left: 75%;
+  margin-left: 95%;
   margin-top: -25%;
 }
 img.vloj {
   width: 190px;
   height: 120px;
   margin-left: -30px;
+  margin-top: -15px;
+}
+.bootn2 {
+
 }
