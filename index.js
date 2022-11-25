@@ -51,7 +51,7 @@ app.put('/edit/:id', function (req, res) {
   jsonfile.readFile('data.json', function (err, obj) {
     let fileObj = obj;
     fileObj[id].text = newText;
-    jsonfile.writeFile('./views/data.json', fileObj, function (err) {
+    jsonfile.writeFile('data.json', fileObj, function (err) {
       if (err) throw err;
     });
     res.send(obj);

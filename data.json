@@ -1,35 +1,14 @@
 [
   {
-    "name": "Person1",
-    "position": "Software Eng",
-    "address": "Nairobi",
-    "phone": "0712121212",
-    "foods": {
-      "likes": ["fish", "chips"],
-      "dislikes": ["pork"]
-    },
-    "text": ""
-  },
-  {
-    "name": "Person2",
-    "position": "Web Dev",
-    "address": "Mombasa",
-    "phone": "0711223344",
-    "foods": {
-      "likes": ["checken", "eggs"],
-      "dislikes": ["bread"]
-    },
-    "text": ""
-  },
-  {
-    "name": "Person3",
-    "position": "Marketer",
-    "address": "Nakuru",
-    "phone": "0711121314",
-    "foods": {
-      "likes": ["peas", "beans"],
-      "dislikes": ["weed"]
-    },
-    "text": ""
+    "id": 0,
+    "name": "",
+    "tasks": [
+      {
+        "name": "Налить чай",
+        "status": "srochno",
+        "description": "Чай должен чёрный, превосходного отбора. К чаю предоставить закуски.",
+        "time": "1"
+      }
+    ]
   }
 ]
