@@ -354,7 +354,6 @@ h3 {
   display: block;
 }
 .modal-dialog {
-  display: flex;
   border: #333 solid 1x;
   border-radius: 5px;
   position: fixed;
@@ -382,7 +381,6 @@ h3 {
 }
 .modal-body {
   padding: 20px;
-  margin-top: -110px;
 }
 .modal-header,
 .modal-footer {
@@ -434,7 +432,7 @@ a.bootn {
 
 .da {
   font-size: 15px;
-  width: 130%;
+  width: 70%;
   height: 250px;
   background: rgba(216, 216, 216, 0.96);
   border: 0;
@@ -459,9 +457,10 @@ a.bootn {
   text-decoration: none;
   margin-left: 2%;
 }
+
 .vloj {
-  margin-left: 95%;
-  margin-top: -25%;
+  margin-left: 55%;
+  margin-top: -16%;
 }
 img.vloj {
   width: 190px;
@@ -484,4 +483,7 @@ img.vloj {
   background-color: #9aff98;
   text-align: center;
   border-radius: 10px;
+}
+.opis {
+  margin-top: 5%;
 }
