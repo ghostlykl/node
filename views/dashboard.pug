@@ -18,229 +18,56 @@ head
   main
     .main_container
       .tasks_container
-        .regular_container
-          .task_container_header
-            .tasks_header
-              | Дела
-            .more_btn_d
-              button.more_btn ...
         for n in data
-          .task_container
-            .task_header_container
-              .task_header_left
-                .circle.regular_circle
-                .task_header
-                  h2 #{n.name}
-              .spike
-                img(src='img/spike.png' alt='')
-            .task_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .task_container
-            .task_header_container
-              .task_header_left
-                .circle.regular_circle
-                .task_header
-                  h2 Заголовок
-              .spike
-                img(src='img/leon.png' alt='')
-            .task_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .task_container
-            .task_header_container
-              .task_header_left
-                .circle.regular_circle
-                .task_header
-                  h2 Заголовок
-              .spike
-                img(src='img/poko.png' alt='')
-            .task_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .body1
-            #modal-one.modal(aria-hidden='true')
-              a.bootn(href='#modal-one') Добавить задачу
-              .modal-dialog
-                .modal-header
-                  h3.modal-title Название задачи
-                    input.nazv(type="text")
-                  a.btn-close(href='#close' aria-hidden='true') x 
-                  .modal-body
-                  p Участники:
-                  img(src='img/poko.png' alt='')
-                  img(src='img/poko.png' alt='')
-                  img(src='img/poko.png' alt='')
-                  .vloj
-                    p Вложения
-                    img.vloj(src='img/1.png' alt='')
-                  .opis
-                      label.ab Описание
-                      input.da(type='text')
-                  button.bootn2 Удалить
-                  button.bootn3 Изменить
-        .in_progress_container
-          .task_container_header
-            .tasks_header
-              | В процессе
-            .more_btn_d
-              button.more_btn ...
-          .in_progress_container1
-            .in_progress_header_container
-              .in_progress_middle
-                .circle.regular_circle1
-                .in_progress_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .in_progress_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .in_progress_container1
-            .in_progress_header_container
-              .in_progress_middle
-                .circle.regular_circle1
-                .in_progress_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .in_progress_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .in_progress_container1
-            .in_progress_header_container
-              .in_progress_middle
-                .circle.regular_circle1
-                .in_progress_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .in_progress_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .body1
-            #modal-one.modal(aria-hidden='true')
-              a.bootn(href='#modal-one') Добавить задачу
-              .modal-dialog
-                .modal-header
-                  h3.modal-title Название задачи
-                .modal-body
-                p участники
-                img(src='img/poko.png' alt='')
-                img(src='img/poko.png' alt='')
-                img(src='img/poko.png' alt='')
-                a.btn-close(href='#close' aria-hidden='true') x 
-        .problems_container
-          .task_container_header
-            .tasks_header
-              | Проблемки
-            .more_btn_d
-              button.more_btn ...
-          .problem_container
-            .problem_header_container
-              .problem_right
-                .circle.regular_circle2
-                .problem_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .problem_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .problem_container
-            .problem_header_container
-              .problem_right
-                .circle.regular_circle2
-                .problem_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .problem_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .problem_container
-            .problem_header_container
-              .problem_right
-                .circle.regular_circle2
-                .problem_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .problem_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ... 
-          .body1
-            #modal-one.modal(aria-hidden='true')
-              a.bootn(href='#modal-one') Добавить задачу
-              .modal-dialog
-                .modal-header
-                  h3.modal-title Название задачи
+          .regular_container
+            .task_container_header
+              .tasks_header
+                | #{n.name}
+              .more_btn_d
+                button.more_btn ...
+            for n2 in n.tasks
+              .task_container
+                .task_header_container
+                  .task_header_left
+                    .circle.regular_circle
+                    .task_header
+                      h2 #{n2.name}
+                  .spike
+                    img(src='img/spike.png' alt='')
+                .task_description_container
+                  div #{n2.desc}
+                  .more_btn_desc
+                    button ...
+            .body1
+              #modal-one.modal(aria-hidden='true')
+                a.bootn(href='#modal-one') Добавить задачу
+                .modal-dialog
+                  .modal-header
+                    h3.modal-title Название задачи
+                      input.nazv(type="text")
+                    a.btn-close(href='#close' aria-hidden='true') x 
+                    .modal-body
+                    p Участники:
+                    img(src='img/poko.png' alt='')
+                    img(src='img/poko.png' alt='')
+                    img(src='img/poko.png' alt='')
+                    .vloj
+                      p Вложения
+                      img.vloj(src='img/1.png' alt='')
+                    .opis
+                        label.ab Описание
+                        input.da(type='text')
+                    button.bootn2 Удалить
+                    button.bootn3 Изменить
+            .body1
+              #modal-one.modal(aria-hidden='true')
+                a.bootn(href='#modal-one') Добавить задачу
+                .modal-dialog
+                  .modal-header
+                    h3.modal-title Название задачи
                   .modal-body
                   p участники
                   img(src='img/poko.png' alt='')
                   img(src='img/poko.png' alt='')
                   img(src='img/poko.png' alt='')
-                a.btn-close(href='#close' aria-hidden='true') x
-        .gotovos_container
-          .task_container_header
-            .tasks_header
-              | Готово
-            .more_btn_d
-              button.more_btn ...
-          .gotovo_container
-            .gotovo_header_container
-              .gotovo_right
-                .circle.regular_circle3
-                .gotovo_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .gotovo_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .gotovo_container
-            .gotovo_header_container
-              .gotovo_right
-                .circle.regular_circle3
-                .gotovo_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .gotovo_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .gotovo_container
-            .gotovo_header_container
-              .gotovo_right
-                .circle.regular_circle3
-                .gotovo_header
-                  h3 Заголовок
-              .bibi
-                img(src='img/bibi.png' alt='')
-            .gotovo_description_container
-              div Какое-то описание
-              .more_btn_desc
-                button ...
-          .body1 
-            #modal-one.modal(aria-hidden='true')
-              a.bootn(href='#modal-one') Добавить задачу
-              .modal-dialog
-                .modal-header
-                  h3.modal-title Название задачи
-                  .modal-body
-                  p участники
-                  img(src='img/poko.png' alt='')
-                  img(src='img/poko.png' alt='')
-                  img(src='img/poko.png' alt='')
-                a.btn-close(href='#close' aria-hidden='true') x
+                  a.btn-close(href='#close' aria-hidden='true') x
